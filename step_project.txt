@@ -1,0 +1,4 @@
+php artisan make:mail MailConformation --markdown
+
+php artisan schedule:list
+php artisan schedule:run

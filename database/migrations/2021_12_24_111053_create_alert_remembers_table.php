@@ -15,6 +15,12 @@ class CreateAlertRemembersTable extends Migration
     {
         Schema::create('alert_remembers', function (Blueprint $table) {
             $table->id();
+            $table->string("name");
+            $table->unsignedBigInteger("user_id");
+            $table->date("date_start");
+            $table->date("date_finish");
+            $table->foreign("user_id")->references('id')
+            ->on("users")->onDelete("cascade");
             $table->timestamps();
         });
     }

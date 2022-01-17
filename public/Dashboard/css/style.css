@@ -1,0 +1,11 @@
+
+.m-center{
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.flex-start{
+    display: flex;
+}
